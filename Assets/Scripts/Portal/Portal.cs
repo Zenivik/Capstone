@@ -82,7 +82,7 @@ public class Portal : MonoBehaviour
         if (portalableObject != null && portalableObject.gameObject.tag.Equals("Enemy"))
         {
             GameObject enemy = portalableObject.gameObject;
-            //enemy.GetComponent<NavMeshAgent>().enabled = false;
+            enemy.GetComponent<NavMeshAgent>().enabled = false;
         }
 
         if (portalableObject)
